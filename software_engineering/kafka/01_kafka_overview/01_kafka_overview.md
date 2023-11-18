@@ -13,6 +13,6 @@
 ![](2023-11-18-23-06-13.png)
 
 ### Simplified workflow
-1, When consumer send messages to kafka, they will be partitioned based on **keys**. For example, messages having key ended with 1, 3, 5, 7, 9 go to Broker 1 and messages having key ended with 0, 2, 4, 6, 8 go to Broker 2.
+1, When consumer send messages to Kafka, they will be partitioned based on **keys**. For example, messages having key ended with 1, 3, 5, 7, 9 go to Broker 1 and messages having key ended with 0, 2, 4, 6, 8 go to Broker 2.
 2, Each partition has a Broker as leader, messages of a partition will be sent to partition leader first, then they can be replicated into other brokers to increase availability and durability. 
-3, When Consumer want to read messages from a cluster, it can read messages from any Broker which has that partition available.
+3, When Consumer wants to read messages from a cluster, it can read messages from any Broker which has that partition available.
