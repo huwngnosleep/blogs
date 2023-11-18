@@ -1,5 +1,5 @@
 # Overview of a Kafka cluster 
-
+In this article I will simply explain components of a Kafka cluster and their high-level behavior
 ### Main concepts
 - **Topic** - can be understood as **table** in databases
 - **Producer** - produces messages to Kafka.
